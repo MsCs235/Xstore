@@ -1,0 +1,81 @@
+.scard{
+    margin: 50px 20px;
+    font-size: medium;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 55px;
+    clip-path:circle();
+}
+
+.left-side{
+    
+    margin: 5px;
+    width: 65%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f6f4f457;
+
+}
+
+.right-side{
+    margin: 5px;
+    width: 32%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f6f4f457;
+    height:fit-content;
+}
+
+a{
+    color: black;
+}
+
+.link{
+    margin: 0px 5px;
+}
+
+.btn-dark{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+hr{
+    margin: 3px;
+}
+
+.left-side .productimg{
+    height: 300px; 
+}
+
+
+/* Small devices (landscape phones, 768px and down) */
+@media (max-width: 768px) {
+    
+    h3{
+        font-size: small;
+    }
+    .scard{
+        margin: 0px;
+        flex-direction: column;
+        width: 100%;
+        font-size: small;
+    }
+
+    .left-side , .right-side{
+        width: 100%;
+        margin: 0px;
+        border: 0px;
+        background-color: white;
+    }
+
+    .profile-pic {
+        width: 40px;
+        height: 32px;
+    }
+
+ }
+
+   

@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.side{
+    border-radius: 3px;
+    border-color: #dc3545;
+}
+
+.cad{
+    margin-left: auto;
+    text-align:left;
+    width: 240px;
+    height: 100px;
+}
+
+.spon{
+   color: gray;
+   margin: 1px;
+}
+
+.ramadan{
+    background-color: #dc3545;
+    color: white;
+    width: 100px;
+    margin: -10px;
+    position: relative;
+    right: 3px;
+}
+
+.txt{
+    position: relative;
+    right: 10px;
+    margin-top: -12px;
+
+}
+
+.rev , .side , .icn{
+    margin-left: 0px;
+}
+
+
+#more{
+    text-decoration: none;
+    color: green;
+}
+#less{
+    text-decoration: none;
+    color: green;
+}
+.btn-size{
+    text-decoration: none;
+    color: black;
+    width: 365px;
+    padding: 7px 5px;
+    border:1px solid grey;
+    border-radius: 10px;
+
+}
+.btn-filt{
+    
+        background-color:gray;
+        border: none;
+        color: white;
+        padding: 9px ;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 4px;
+      
+}
+@media (max-width: 768px) {
+    .card{
+        margin: 0;
+    }
+}

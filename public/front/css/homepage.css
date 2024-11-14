@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    font-family: AvenirNext-DemiBold,Tahoma-Bold,Arial;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+/* Hide scrollbar for Firefox */
+body {
+    scrollbar-width: none;
+}
+
+
+.main-title{
+    font-size:small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Carousel Start */
+.carousel-item {
+    height:60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+ }
+/* Carousel End */
+
+/* navbar */
+.navbar{
+    width: 100%;
+}
+
+.searchinput{
+    border-radius: 0;
+    border: 0;
+}
+
+.searchinput:focus{
+    box-shadow: none;
+}
+
+.categories{
+    color:rgb(67, 67, 67);
+}
+
+.categories:hover{
+    color:rgb(255, 255, 255);
+    background-color: black;
+}
+/* end navbar */
+
+/* slide show */
+.d-block {
+    display: block!important;
+    height: 555px;
+}
+/* end slide show */
+
+/* scroll bar */
+.card-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    max-width: 100%;
+}
+
+.card-scroll {
+    background-color: rgba(255, 255, 255, 0.865);
+    flex: 0 0 auto; /* Prevent cards from growing */
+    width: 260px; /* Set width of each card */
+    margin-right: 20px; /* Add spacing between cards */
+    border: 0;
+    padding: 10px;
+    align-items: center;
+}
+
+img{
+    height: 200px;
+}
+/* end scroll bar */
+
+/* gallary */
+.gallary{
+    height: 230px;
+    width: 210px;
+}
+.gallary:hover p{
+    border-bottom: 1px solid black;
+    font-style: italic;
+}
+/* end gallary */
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) { 
+
+    *{
+        font-size: small;
+        margin: 0;
+    }
+    
+    /* slide show */
+    .d-block {
+        display: block!important;
+        height: 200px;
+    }
+    /* end slide show */
+
+    /* Carousel Start */
+    .carousel-item {
+        height: 200px;
+        width: 100%;
+        background-position:35%;
+    }
+    /* Carousel End */
+
+    /* scroll bar */
+    .card-scroll {
+        background-color: rgba(255, 255, 255, 0.865);
+        flex: 0 0 auto; /* Prevent cards from growing */
+        width: 200px; /* Set width of each card */
+        margin-right: 10px; /* Add spacing between cards */
+        border: 0;
+        padding: 10px;
+        align-items: center;
+    }
+    img{
+        height: 170px;
+    }
+    /* end scroll bar */
+
+    /* gallary */
+    .gallary{
+        height: 165px;
+        width: 130px;
+    }
+    /* end gallary */
+
+}
+
+
+ 

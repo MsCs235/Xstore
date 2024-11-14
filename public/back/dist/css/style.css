@@ -1,0 +1,13 @@
+.emp-card{
+    width:600px;
+    margin:auto;
+    box-shadow:7px 7px 10px #ccc;
+}
+
+.card a{
+    color:white;
+}
+
+.page-item .page-link{
+    color: black;
+}

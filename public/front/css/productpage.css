@@ -1,0 +1,141 @@
+.main-photo , .sub-photo{
+    display: flex;
+    justify-content: center;
+}
+
+.main-photo img{
+    width: auto;
+    height: 450px;
+}
+
+.sub-photo img{
+    margin: 10px 15px;
+    width: auto;
+    height: 40px;
+}
+
+.zoom {
+    overflow: hidden;
+    cursor: zoom-in;
+}
+ 
+.zoom img {
+    transition: transform .1s ease;
+}
+
+.iconrate{
+    width: fit-content;
+    height: 35px;
+    background-color: white;
+    color: rgb(31, 25, 53);
+}
+
+.line{
+    width: 83%;
+    z-index: -1;
+    position: absolute;
+
+}
+
+.progress-bar{
+    /*bad*/
+    /* width: 10%; */
+    /*Poor*/
+    /* width: 30%; */
+    /*good*/ 
+    /* width: 50%;  */
+    /*very good*/ 
+    width: 73%;
+    /*excellent*/
+    /* width: 100%;  */
+
+    background-color: rgb(33, 27, 27);
+}
+
+
+/* review style */
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+  }
+
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .rating label:last-child {
+    position: static;
+  }
+
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .rating label .icon {
+    float: left;
+    color: transparent;
+    font-size: 30px;
+  }
+
+  .rating label:last-child .icon {
+    color: #aab;
+  }
+
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #000;
+  }
+
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
+
+/* end review */
+
+/* Small devices (landscape phones, 768px and down) */
+@media (max-width: 768px) {
+    
+    .main-photo img{
+        width: auto;
+        height: 200px;
+    }
+    .p-x-2px{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .iconrate{
+        width: fit-content;
+        height: 30px;
+    }
+}
