@@ -26,10 +26,6 @@ class ProductController extends Controller
         $item = Product::where('user_id', Auth::user()->id)
             ->orderBy('created_at','DESC')->paginate(5); //using orderBy() function for sorting data by column
 
-        // $item = DB::table('Products')
-        // ->join('Product_imgs', 'Products.id', '=', 'Product_imgs.product_id')
-        // ->get();
-
         return view('layouts.products',compact('item'));
     }
 
